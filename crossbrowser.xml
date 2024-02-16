@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite thread-count="5" name="Suite">
+ 
+  <listeners>
+  	<listener class-name="Utils.ExtentReportManager"></listener>
+  </listeners>
+  <test name="ChromeTest">
+  	<parameter name="os" value="Windows"></parameter>
+  	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="TestCases.LoanTenureCalculatorUICheck"></class>
+    </classes>
+  </test> <!-- Test -->
+   <test name="EdgeTest">
+  	<parameter name="os" value="Windows"></parameter>
+  	<parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="TestCases.LoanTenureCalculatorUICheck"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
