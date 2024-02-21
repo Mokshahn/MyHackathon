@@ -11,35 +11,28 @@ public class EMICalculatorPage extends BasePage{
 		
 	}
 	
-	// Web Elemets
+	// WebElements or Locators of all drop_down
 	
 	// Car Loan Element
-	@FindBy(xpath = "//li[@id='car-loan']/a")
-	WebElement carLoanElement;
+	@FindBy(xpath = "//li[@id='car-loan']/a") WebElement carLoanElement;
 	
 	// Calculators drop down element
-	@FindBy(xpath = "//a[@id='menu-item-dropdown-2696']")
-	WebElement calculatorsDropDownElement;
+	@FindBy(xpath = "//a[@id='menu-item-dropdown-2696']")         WebElement calculatorsDropDownElement;
 	
 	// home loan emi calculator element
-	@FindBy(xpath = "//ul[@class='dropdown-menu show']/li[1]/a")
-	WebElement homeLoanEmiCalculatorElement;
+	@FindBy(xpath = "//ul[@class='dropdown-menu show']/li[1]/a")  WebElement homeLoanEmiCalculatorElement;
 	
 	// Loan Calculator element
-	@FindBy(xpath = "//ul[@class='dropdown-menu show']/li[2]/a")
-	WebElement loanCalculatorElement;
+	@FindBy(xpath = "//ul[@class='dropdown-menu show']/li[2]/a")  WebElement loanCalculatorElement;
 	
 	// EMI Calculator link Element
-	@FindBy(xpath = "//li[@id='emi-calc']")
-	WebElement emiCalculatorLinkElement;
+	@FindBy(xpath = "//li[@id='emi-calc']")     	WebElement emiCalculatorLinkElement;
 	
-	// Loan Amount Claculator link Element
-	@FindBy(xpath = "//li[@id='loan-amount-calc']")
-	WebElement loanAmountCalculatorLinkElement;
+	// Loan Amount Calculator link Element
+	@FindBy(xpath = "//li[@id='loan-amount-calc']") WebElement loanAmountCalculatorLinkElement;
 	
 	// Loan Tenure Calculator link Element
-	@FindBy(xpath = "//li[@id='loan-tenure-calc']")
-	WebElement loanTenureCalculatorxLinkElement;
+	@FindBy(xpath = "//li[@id='loan-tenure-calc']") WebElement loanTenureCalculatorxLinkElement;
 	
 	
 	// Action Methods

@@ -18,7 +18,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 
 public class BaseClass {
@@ -26,16 +25,15 @@ public class BaseClass {
 	public static WebDriver driver;
 	public Properties properties;
 	public Logger logger;
-	public SoftAssert softAssert;
+	
 	
 	@BeforeClass(groups = {"Master","Sanity","Regression"})
 	@Parameters({"os","browser"})
 	public void setUp(String os,String browser) throws IOException {
 		
-		// SoftAssert Object Creation 
-		softAssert = new SoftAssert();
 		
-		// Config file setup
+		
+		// Configuration file setup
 		FileInputStream propertiesFile = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
 		properties = new Properties();
 		properties.load(propertiesFile);
@@ -43,10 +41,13 @@ public class BaseClass {
 		// logger Object Creation 
 		logger = LogManager.getLogger(Test.class);
 		
+		//Grid setup
 		
+		//If execution_env is Remote
 		if(properties.getProperty("execution_env").equalsIgnoreCase("remote"))
 	 	{	
 		DesiredCapabilities capabilities=new DesiredCapabilities();
+		
 		//os
 		if(os.equalsIgnoreCase("windows"))
 		{
@@ -70,6 +71,8 @@ public class BaseClass {
 		}
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
 	    }
+		
+		
 	 //If execution_env is local then run in local system
 	else if(properties.getProperty("execution_env").equalsIgnoreCase("local"))
 	{

@@ -22,125 +22,100 @@ public class HomeLoanPage extends BasePage{
 	// Web Elements
 	
 	// Home loan details header element 
-	@FindBy(xpath = "//h3[@id='ld']")
-	WebElement homeLoanDetailsHeaderElement;
+	@FindBy(xpath = "//h3[@id='ld']")                 WebElement homeLoanDetailsHeaderElement;
 	
 	// Advertisement dismiss button
-	@FindBy(xpath = "//div[@id='dismiss-button']")
-	WebElement advertisementDismissButtonElement;
+	@FindBy(xpath = "//div[@id='dismiss-button']")    WebElement advertisementDismissButtonElement;
 	
 	// Advertisement iframe element
-	@FindBy(xpath = "//iframe[@id='ad_iframe']")
-	WebElement advertisementIframeElement;
+	@FindBy(xpath = "//iframe[@id='ad_iframe']")      WebElement advertisementIframeElement;
 	
 	// First Iframe Element
 	@FindBy(xpath = "//iframe[@id='google_esf']/following-sibling::ins/div/iframe")
 	WebElement firstIframeElement;
 	
 	// Home Value input box element
-	@FindBy(xpath = "//input[@id='homeprice']")
-	WebElement homeValueInputElement;
+	@FindBy(xpath = "//input[@id='homeprice']")       WebElement homeValueInputElement;
 	
 	// Loan Amount input box element
-	@FindBy(xpath = "//input[@id='homeloanamount']")
-	WebElement loanAmountInputElement;
+	@FindBy(xpath = "//input[@id='homeloanamount']")  WebElement loanAmountInputElement;
 	
 	// Down Payment input box element
-	@FindBy(xpath = "//input[@id='downpayment']")
-	WebElement downPaymentElement;
+	@FindBy(xpath = "//input[@id='downpayment']")     WebElement downPaymentElement;
 	
 	// Down Payment rupees button element
-	@FindBy(xpath = "//input[@id='downpayment']/../div/div/label[2]")
-	WebElement downPaymentRupeesButtonElement;
+	@FindBy(xpath = "//input[@id='downpayment']/../div/div/label[2]")    WebElement downPaymentRupeesButtonElement;
 	
 	// Loan Insurance Input element
-	@FindBy(xpath = "//input[@id='homeloaninsuranceamount']")
-	WebElement loanInsuranceInputElement;
+	@FindBy(xpath = "//input[@id='homeloaninsuranceamount']")            WebElement loanInsuranceInputElement;
 	
 	// Interest Rate input element
-	@FindBy(xpath = "//input[@id='homeloaninterest']")
-	WebElement interesetRateInputElement;
+	@FindBy(xpath = "//input[@id='homeloaninterest']")                   WebElement interesetRateInputElement;
 	
 	// Loan Tenure input element
-	@FindBy(xpath = "//input[@id='homeloanterm']")
-	WebElement loanTenureInputElement;
+	@FindBy(xpath = "//input[@id='homeloanterm']")                       WebElement loanTenureInputElement;
 	
 	// Loan Tenure months button
-	@FindBy(xpath = "//input[@id='homeloanmonths']//..")
-	WebElement loanTenureMonthsButtonElement;
+	@FindBy(xpath = "//input[@id='homeloanmonths']//..")                 WebElement loanTenureMonthsButtonElement;
 	
 	// Loan Charges input element
-	@FindBy(xpath = "//input[@id='loanfees']")
-	WebElement loanChargesInputElement;
+	@FindBy(xpath = "//input[@id='loanfees']")                           WebElement loanChargesInputElement;
 	
 	// Loan Charges rupees button element
-	@FindBy(xpath = "//input[@id='loanfeesrupees']/..")
-	WebElement loanChargesRupeesButtonElement;
+	@FindBy(xpath = "//input[@id='loanfeesrupees']/..")                  WebElement loanChargesRupeesButtonElement;
 	
 	// Loan Start Month and Year element
-	@FindBy(xpath = "//input[@id='startmonthyear']")
-	WebElement loanStartMonthAndYearInputElement;
+	@FindBy(xpath = "//input[@id='startmonthyear']")                     WebElement loanStartMonthAndYearInputElement;
 	
-	// Datepicker element
-	@FindBy(xpath = "//div[@class='datepicker-months']")
-	WebElement datePickerElement;
+	// Date picker element table
+	@FindBy(xpath = "//div[@class='datepicker-months']")                 WebElement datePickerElement;
 	
-	// Loan Start Year
-	@FindBy(xpath = "(//table[@class='table-condensed'])[2]/thead/tr[2]/th[2]")
-	WebElement loanYearElement;
+	// Loan Start Year button in table
+	@FindBy(xpath = "(//table[@class='table-condensed'])[2]/thead/tr[2]/th[2]") WebElement loanYearElement;
 	
 	// Year change button (Next)
-	@FindBy(xpath = "(//table[@class='table-condensed'])[2]/thead/tr[2]/th[3]")
-	WebElement nextYearButtonElement;
+	@FindBy(xpath = "(//table[@class='table-condensed'])[2]/thead/tr[2]/th[3]")	WebElement nextYearButtonElement;
 	
 	// List of Month Elements
-	@FindBy(xpath = "(//table[@class='table-condensed'])[2]/tbody/tr/td/span")
-	List<WebElement> monthsElement;
+	@FindBy(xpath = "(//table[@class='table-condensed'])[2]/tbody/tr/td/span")  List<WebElement> monthsElement;
 	
 	// One time expenses
-	@FindBy(xpath = "//input[@id='onetimeexpenses']")
-	WebElement oneTimeExpensesElement;
+	@FindBy(xpath = "//input[@id='onetimeexpenses']")                    WebElement oneTimeExpensesElement;
 	
 	// One Time expenses rupees button
-	@FindBy(xpath = "//input[@id='onetimeexpensesrupees']/..")
-	WebElement oneTimeExpensesRupeesElement;
+	@FindBy(xpath = "//input[@id='onetimeexpensesrupees']/..")         	 WebElement oneTimeExpensesRupeesElement;
 	
 	// Property Taxes / year input element
-	@FindBy(xpath = "//input[@id='propertytaxes']")
-	WebElement propertyTaxesPerYearElement;
+	@FindBy(xpath = "//input[@id='propertytaxes']")                      WebElement propertyTaxesPerYearElement;
 	
 	// Property Taxes / year rupees button element
-	@FindBy(xpath = "//input[@id='propertytaxesrupees']/..")
-	WebElement propertyTaxesPerYearRupeesButtonElement;
+	@FindBy(xpath = "//input[@id='propertytaxesrupees']/..")             WebElement propertyTaxesPerYearRupeesButtonElement;
 	
 	// Home Insurance / year input Element
-	@FindBy(xpath = "//input[@id='homeinsurance']")
-	WebElement homeInsurancePerYearInputElement;
+	@FindBy(xpath = "//input[@id='homeinsurance']")                      WebElement homeInsurancePerYearInputElement;
 	
 	//Home Insurance / Year rupees button element
-	@FindBy(xpath = "//input[@id='homeinsurancerupees']/..")
-	WebElement homeInsurancePerYearRupeesButtonElement;
+	@FindBy(xpath = "//input[@id='homeinsurancerupees']/..")             WebElement homeInsurancePerYearRupeesButtonElement;
 	
 	// Maintenance Expenses / month element
-	@FindBy(xpath = "//input[@id='maintenanceexpenses']")
-	WebElement maintenanceExpensesPerMonthElement;
+	@FindBy(xpath = "//input[@id='maintenanceexpenses']")                WebElement maintenanceExpensesPerMonthElement;
 	
 	// Year on Year table
-	@FindBy(xpath = "//div[@id='paymentschedule']")
-	WebElement yearOnYearTableElement;
+	@FindBy(xpath = "//div[@id='paymentschedule']")                      WebElement yearOnYearTableElement;
 	
 	// Year on Year table Headers
-	@FindBy(xpath = "//div[@id='paymentschedule']/table/tbody/tr[1]/th")
-	List<WebElement> headersElements;
+	@FindBy(xpath = "//div[@id='paymentschedule']/table/tbody/tr[1]/th") List<WebElement> headersElements;
 	
 	// Year on Year table row
-	@FindBy(xpath = "//tr[@class='row no-margin yearlypaymentdetails']")
-	List<WebElement> dataTableRowElements;
+	@FindBy(xpath = "//tr[@class='row no-margin yearlypaymentdetails']") List<WebElement> dataTableRowElements;
+	
+	
+	
 	
 	
 	// Action Methods
 	
-	JavascriptExecutor jse = (JavascriptExecutor)driver;
+	JavascriptExecutor js = (JavascriptExecutor)driver;
 	
 	// Method to validate home loan emi calculator link
 	public boolean validateHomeLoanEmiCalculator() {
@@ -222,9 +197,7 @@ public class HomeLoanPage extends BasePage{
 	
 	// Method to click on the Loan Tenure Months button
 	public void clickOnLoanTenureMonthsButton() {
-		
-		
-		jse.executeScript("arguments[0].click();", loanTenureMonthsButtonElement);
+		js.executeScript("arguments[0].click();", loanTenureMonthsButtonElement);
 		
 	}
 	
@@ -289,7 +262,6 @@ public class HomeLoanPage extends BasePage{
 			}
 		}
 		catch (Exception e) {
-			// TODO: handle exception
 		}
 	}
 	
@@ -353,7 +325,7 @@ public class HomeLoanPage extends BasePage{
 	
 	// Method to print the Year on Year table
 	public void readData() throws InterruptedException, IOException {
-		jse.executeScript("arguments[0].scrollIntoView();", yearOnYearTableElement);
+		js.executeScript("arguments[0].scrollIntoView();", yearOnYearTableElement);
 		
 		Thread.sleep(4000);
 		

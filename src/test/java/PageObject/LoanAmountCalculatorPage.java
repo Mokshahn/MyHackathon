@@ -21,20 +21,17 @@ public class LoanAmountCalculatorPage extends BasePage {
 	// Web Elements 
 	
 	// EMI input field Element
-	@FindBy(xpath = "//input[@id='loanemi']")
-	WebElement emiInputFieldElement;
-	
+	@FindBy(xpath = "//input[@id='loanemi']")                         WebElement emiInputFieldElement;
+	                   
 	// EMI Slider tip Element
-	@FindBy(xpath = "//div[@id='loanemislider']/span")
-	WebElement emiSliderTipElement;
+	@FindBy(xpath = "//div[@id='loanemislider']/span")                WebElement emiSliderTipElement;
+	
 	
 	// EMI Slider Scale EElements
-	@FindBy(xpath = "//div[@id='loanemisteps']/span")
-	List<WebElement> emiSliderScaleElements;
+	@FindBy(xpath = "//div[@id='loanemisteps']/span")                 List<WebElement> emiSliderScaleElements;
 	
 	// Loan Tenure Year button
-	@FindBy(xpath = "//input[@id='loanyears']/..")
-	WebElement loanTenureYearButtonElement;
+	@FindBy(xpath = "//input[@id='loanyears']/..")                    WebElement loanTenureYearButtonElement;
 	
 	
 	// Action Methods 

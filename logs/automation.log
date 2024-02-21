@@ -1,33 +1,33 @@
-19:03:03.437 [main] INFO  org.testng.annotations.Test - ****** finished TC_041 Loan Amount EMI Input Field ******
-19:03:04.024 [main] INFO  org.testng.annotations.Test - ****** Starting TC_042 Loan Amount EMI Input Field ******
-19:03:04.923 [main] INFO  org.testng.annotations.Test - ****** finished TC_042 Loan Amount EMI Input Field ******
-19:03:05.310 [main] INFO  org.testng.annotations.Test - ****** Starting TC_043 Loan Amount Interest Rate Input Field ******
-19:03:05.436 [main] INFO  org.testng.annotations.Test - ****** finished TC_043 Loan Amount Interest Rate Input Field ******
-19:03:06.144 [main] INFO  org.testng.annotations.Test - ****** Starting TC_044 Loan Amount Interest Rate Input Field ******
-19:03:07.335 [main] INFO  org.testng.annotations.Test - ****** finished TC_044 Loan Amount Interest Rate Input Field ******
-19:03:07.704 [main] INFO  org.testng.annotations.Test - ****** Starting TC_045 Loan Amount Tenure Input Field ******
-19:03:07.793 [main] INFO  org.testng.annotations.Test - ****** finished TC_045 Loan Amount Tenure Input Field ******
-19:03:08.377 [main] INFO  org.testng.annotations.Test - ****** Starting TC_046 Loan Amount Tenure Input Field ******
-19:03:09.271 [main] INFO  org.testng.annotations.Test - ****** finished TC_046 Loan Amount Tenure Input Field ******
-19:03:09.602 [main] INFO  org.testng.annotations.Test - ****** Starting TC_047 Loan Amount Tenure Month Button ******
-19:03:13.419 [main] INFO  org.testng.annotations.Test - ****** finished TC_047 Loan Amount Tenure Month Button ******
-19:03:13.740 [main] INFO  org.testng.annotations.Test - ****** Starting TC_048 Loan Amount Loan Charges Input Field ******
-19:03:13.809 [main] INFO  org.testng.annotations.Test - ****** finished TC_048 Loan Amount Loan Charges Input Field ******
-19:03:14.392 [main] INFO  org.testng.annotations.Test - ****** Starting TC_049 Loan Amount Loan Charges Input Field ******
-19:03:15.338 [main] INFO  org.testng.annotations.Test - ****** finished TC_049 Loan Amount Loan Charges Input Field ******
-19:03:15.719 [main] INFO  org.testng.annotations.Test - ****** Starting TC_050 Loan Tenure Calculator Link ******
-19:03:16.198 [main] INFO  org.testng.annotations.Test - ****** finished TC_048 Loan Tenure Calculator Link ******
-19:03:16.519 [main] INFO  org.testng.annotations.Test - ****** Starting TC_051 Loan Tenure Loan Amount Input Field ******
-19:03:16.607 [main] INFO  org.testng.annotations.Test - ****** finished TC_051 Loan Tenure Loan Amount Input Field ******
-19:03:17.200 [main] INFO  org.testng.annotations.Test - ****** Starting TC_052 Loan Tenure Loan Amount Input Field ******
-19:03:18.470 [main] INFO  org.testng.annotations.Test - ****** finished TC_052 Loan Tenure Loan Amount Input Field ******
-19:03:18.788 [main] INFO  org.testng.annotations.Test - ****** Starting TC_053 Loan Tenure EMI Input Field ******
-19:03:18.873 [main] INFO  org.testng.annotations.Test - ****** finished TC_053 Loan Tenure EMI Input Field ******
-19:03:19.178 [main] INFO  org.testng.annotations.Test - ****** Starting TC_054 Loan Tenure Interest Rate Input Field ******
-19:03:19.238 [main] INFO  org.testng.annotations.Test - ****** finished TC_054 Loan Tenure Interest Rate Input Field ******
-19:03:19.732 [main] INFO  org.testng.annotations.Test - ****** Starting TC_055 Loan Tenure Interest Rate Input Field ******
-19:03:20.636 [main] INFO  org.testng.annotations.Test - ****** finished TC_055 Loan Tenure Interest Rate Input Field ******
-19:03:20.967 [main] INFO  org.testng.annotations.Test - ****** Starting TC_056 Loan Tenure Loan Charges Input Field ******
-19:03:21.039 [main] INFO  org.testng.annotations.Test - ****** finished TC_056 Loan Tenure Loan Charges Input Field ******
-19:03:21.509 [main] INFO  org.testng.annotations.Test - ****** Starting TC_57 Loan Tenure Loan Charges Input Field ******
-19:03:22.386 [main] INFO  org.testng.annotations.Test - ****** finished TC_057 Loan Tenure Loan Charges Input Field ******
+15:02:52.511 [main] INFO  org.testng.annotations.Test - ****** finished TC_015 Loan Tenure Month Button ******
+15:02:53.315 [main] INFO  org.testng.annotations.Test - ****** Starting TC_016 Loan Charges Input Field ******
+15:02:53.316 [main] INFO  org.testng.annotations.Test - Entering data into Loan Charges Input Field
+15:02:57.719 [main] INFO  org.testng.annotations.Test - ****** finished TC_016 Loan Charges Input Field ******
+15:02:57.995 [main] INFO  org.testng.annotations.Test - ****** Starting TC_017 Loan Charges Rupees Button ******
+15:02:57.996 [main] INFO  org.testng.annotations.Test - Clicking on the Loan Charges Rupees Button
+15:02:58.319 [main] INFO  org.testng.annotations.Test - ****** finished TC_017 Loan Charges Rupees Button ******
+15:02:58.597 [main] INFO  org.testng.annotations.Test - ****** Starting TC_018 Loan Start Month And Year Input Field ******
+15:02:58.597 [main] INFO  org.testng.annotations.Test - Clicking on Loan Start Month and Year Input Field
+15:02:58.841 [main] INFO  org.testng.annotations.Test - ****** finished TC_018 Loan Start Month And Year Input Field******
+15:02:59.727 [main] INFO  org.testng.annotations.Test - ****** Starting TC_019 Loan Start Month And Year Input Field ******
+15:02:59.727 [main] INFO  org.testng.annotations.Test - Entering data into Loan Start Month and Year Input Field
+15:03:01.023 [main] INFO  org.testng.annotations.Test - ****** finished TC_019 Loan Start Month And Year Input Field ******
+15:03:01.870 [main] INFO  org.testng.annotations.Test - ****** Starting TC_020 One Time Expenses Input Field ******
+15:03:01.870 [main] INFO  org.testng.annotations.Test - Entering data into One Time Expenses Input Field
+15:03:02.160 [main] INFO  org.testng.annotations.Test - ****** finished TC_020 One Time Expenses Input Field ******
+15:03:02.463 [main] INFO  org.testng.annotations.Test - ****** Starting TC_021 One Time Expenses Rupees Button ******
+15:03:02.463 [main] INFO  org.testng.annotations.Test - Clicking on One Time Expenses Button
+15:03:05.771 [main] INFO  org.testng.annotations.Test - ****** finished TC_021 One Time Expenses Rupees Button ******
+15:03:06.482 [main] INFO  org.testng.annotations.Test - ****** Starting TC_022 Property Tax Input Field ******
+15:03:06.792 [main] INFO  org.testng.annotations.Test - ****** finished TC_022 Property Tax Input Field ******
+15:03:07.091 [main] INFO  org.testng.annotations.Test - ****** Starting TC_023 Property Tax Rupees Button ******
+15:03:07.092 [main] INFO  org.testng.annotations.Test - Clicking on Property Tax Rupees button
+15:03:10.416 [main] INFO  org.testng.annotations.Test - ****** finished TC_023 Property Tax Rupees Button ******
+15:03:11.241 [main] INFO  org.testng.annotations.Test - ****** Starting TC_024 Home Insurance Input Field ******
+15:03:11.241 [main] INFO  org.testng.annotations.Test - Entering Data into Home Insurance Input Field 
+15:03:11.588 [main] INFO  org.testng.annotations.Test - ****** finished TC_024 Home Insurance Input Field ******
+15:03:11.950 [main] INFO  org.testng.annotations.Test - ****** Starting TC_025 Home Insurance Rupees Button ******
+15:03:11.950 [main] INFO  org.testng.annotations.Test - Clicking on Home Insurance Rupees Button
+15:03:15.973 [main] INFO  org.testng.annotations.Test - ****** Starting TC_026 Maintenance Expenses Input Field ******
+15:03:15.973 [main] INFO  org.testng.annotations.Test - Entering Data into Maintenance Expenses Input Field 
+15:03:16.209 [main] INFO  org.testng.annotations.Test - ****** finished TC_026 Maintenance Expenses Input Field ******
+15:03:16.501 [main] INFO  org.testng.annotations.Test - ****** Starting TC_027 Reading Data from table ******

@@ -17,31 +17,25 @@ public class CarLoanPage extends BasePage {
 		super(driver);
 	}
 	
-	// Web Elements
+	// WebElements or Locators
 	
 	// carLoanAmount Label element 
-	@FindBy(xpath = "//label[@for='loanamount']")
-	WebElement carLoanAmountLabelElement;
+	@FindBy(xpath = "//label[@for='loanamount']")               WebElement carLoanAmountLabelElement;
 	
-	// loan amount slider
-	@FindBy(xpath = "//div[@id='loanamountslider']")
-	WebElement carLoanAmountSliderElement;
+	// loan amount complete slider
+	@FindBy(xpath = "//div[@id='loanamountslider']")            WebElement carLoanAmountSliderElement;
 	
-	// loan amount slider
-	@FindBy(xpath = "//div[@id='loaninterestslider']")
-	WebElement carLoanInterestSliderElement;
+	// loan interest  complete slider
+	@FindBy(xpath = "//div[@id='loaninterestslider']")          WebElement carLoanInterestSliderElement;
 	
-	// loan tenure slider
-	@FindBy(xpath = "//div[@id='loantermslider']")
-	WebElement carLoanTenureSliderElement;
+	// loan tenure  complete slider
+	@FindBy(xpath = "//div[@id='loantermslider']")             	WebElement carLoanTenureSliderElement;
 	
-	// year element 
-	@FindBy(xpath = "//td[@id='year2024']")
-	WebElement yearElement;
+	// year element on table  2024
+	@FindBy(xpath = "//td[@id='year2024']")                     WebElement yearElement;
 	
 	// one month interest amount and principal amount
-	@FindBy(xpath = "//tr[@class='row no-margin'][1]/td")
-	List<WebElement> listOfMonthInterestAndPrincipalAmountElements;
+	@FindBy(xpath = "//tr[@class='row no-margin'][1]/td")       List<WebElement> listOfMonthInterestAndPrincipalAmountElements;
 	
 	
 	// Action Methods
@@ -118,6 +112,7 @@ public class CarLoanPage extends BasePage {
 			}
 		}
 		System.out.println();
+	
 	}
 	
 	

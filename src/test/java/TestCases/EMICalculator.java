@@ -14,7 +14,7 @@ public class EMICalculator extends HomeLoanEMI {
 		
 		logger.info("****** Starting TC_028 Calculators Drop Down ******");
 		
-		logger.info("Clicking on Calcullators Drop Down");
+		logger.info("Clicking on Calculators Drop Down");
 		emiCalculatorPage.clickOnCalculatorsDropDown();
 		
 		boolean result = emiCalculatorPage.validateCalculatorsDropDown();

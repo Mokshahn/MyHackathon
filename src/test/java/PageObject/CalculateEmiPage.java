@@ -13,72 +13,57 @@ public class CalculateEmiPage extends BasePage {
 		super(driver);
 	}
 	
-	// Web Elements
+	// WebElements
 	
-	// page header element
-	@FindBy(xpath = "//div[@class='page-header']/h1")
-	WebElement pageHeaderElement;
+	// Main page header element(EMI Calculator for Home Loan, Car Loan & Personal Loan in India)
+	@FindBy(xpath = "//div[@class='page-header']/h1")WebElement pageHeaderElement;
 	
-	// loan Amount input field element
-	@FindBy(xpath = "//input[@id='loanamount']")
-	WebElement loanAmountInputFieldElement;
+	//  Loan Amount input field element
+	@FindBy(xpath = "//input[@id='loanamount']")              WebElement loanAmountInputFieldElement;
 	
-	// Loan Amount Slider tip element
-	@FindBy(xpath = "//div[@id='loanamountslider']/span")
-	WebElement loanAmountSliderTipElement;
+	//  Loan Amount Slider tip element
+	@FindBy(xpath = "//div[@id='loanamountslider']/span")     WebElement loanAmountSliderTipElement;
 	
-	// Loan Amount Slider scale elements
-	@FindBy(xpath = "//div[@id='loanamountsteps']/span")
-	List<WebElement> loanAmountSliderScaleElements;
+	// Loan Amount Slider scale(|) elements
+	@FindBy(xpath = "//div[@id='loanamountsteps']/span")      List<WebElement> loanAmountSliderScaleElements;
 	
 	// Interest Rate input field element
-	@FindBy(xpath = "//input[@id='loaninterest']")
-	WebElement interestRateInputFieldElement;
+	@FindBy(xpath = "//input[@id='loaninterest']")            WebElement interestRateInputFieldElement;
 	
 	// Interest Rate Slider tip element
-	@FindBy(xpath = "//div[@id='loaninterestslider']/span")
-	WebElement interestRateSliderTipElement;
+	@FindBy(xpath = "//div[@id='loaninterestslider']/span")   WebElement interestRateSliderTipElement;
 	
 	// Interest Rate Slider Scale elements
-	@FindBy(xpath = "//div[@id='loanintereststeps']/span")
-	List<WebElement> interestRateSliderScaleElements;
+	@FindBy(xpath = "//div[@id='loanintereststeps']/span")    List<WebElement> interestRateSliderScaleElements;
 	
 	// Loan Tenure input field element
-	@FindBy(xpath = "//input[@id='loanterm']")
-	WebElement loanTenureInputFieldElement;
+	@FindBy(xpath = "//input[@id='loanterm']")                WebElement loanTenureInputFieldElement;
 	
 	// Loan Tenure Slider tip element
-	@FindBy(xpath = "//div[@id='loantermslider']/span")
-	public WebElement loanTenureSliderTipElement;
+	@FindBy(xpath = "//div[@id='loantermslider']/span")       WebElement loanTenureSliderTipElement;
 	
 	// Loan Tenure Slider Scale Elements
-	@FindBy(xpath = "//div[@id='loantermsteps']/span")
-	public List<WebElement> loanTenureSliderScaleElements;
+	@FindBy(xpath = "//div[@id='loantermsteps']/span")        List<WebElement> loanTenureSliderScaleElements;
 	
 	// Loan Tenure Slider Scale Value Elements
-	@FindBy(xpath = "//div[@id='loantermsteps']/span/span")
-	List<WebElement> loanTenureSliderScaleValueElements;
+	@FindBy(xpath = "//div[@id='loantermsteps']/span/span")   List<WebElement> loanTenureSliderScaleValueElements;
 	
 	// Loan Tenure month button
-	@FindBy(xpath = "//input[@id='loanmonths']/..")
-	WebElement loanTenureMonthButtonElement;
+	@FindBy(xpath = "//input[@id='loanmonths']/..")           WebElement loanTenureMonthButtonElement;
 	
 	// Loan Charges input field element
-	@FindBy(xpath = "//input[@id='loanfees']")
-	WebElement loanChargesInputElement;
+	@FindBy(xpath = "//input[@id='loanfees']")                WebElement loanChargesInputElement;
 	
 	// Loan Charges Slider tip element
-	@FindBy(xpath = "//div[@id='loanfeesslider']/span")
-	WebElement loanChargesSliderTipElement;
+	@FindBy(xpath = "//div[@id='loanfeesslider']/span")       WebElement loanChargesSliderTipElement;
 	
 	// Loan Charges Slider Scale Elements
-	@FindBy(xpath = "//div[@id='loanfeessteps']/span")
-	List<WebElement> loanChargesSliderScaleElement;
+	@FindBy(xpath = "//div[@id='loanfeessteps']/span")        List<WebElement> loanChargesSliderScaleElement;
 	
 	
 	// Action Methods 
 	
-	// Method to validate page header is present or not
+	// Method to validate Main page header is present or not.
 	public boolean verifyPageHeader() {
 		if(pageHeaderElement.isDisplayed()) {
 			return true;
@@ -188,7 +173,7 @@ public class CalculateEmiPage extends BasePage {
 		}
 	}
 	
-	// Method to validate Loan Charges input field present on the page or nots
+	// Method to validate Loan Charges input field present on the page or not
 	public boolean verifyLoanChargesInputFieldPresence() {
 		return loanChargesInputElement.isDisplayed();
 	}
